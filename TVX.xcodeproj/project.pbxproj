@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				C1355C66275560C200BB0DD7 /* TVXApp.swift */,
-				C1355C68275560C200BB0DD7 /* ContentView.swift */,
+				C1355C75275560E800BB0DD7 /* Views */,
+				C1355C74275560DC00BB0DD7 /* Model */,
 				C1355C6A275560C400BB0DD7 /* Assets.xcassets */,
 				C1355C6C275560C400BB0DD7 /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				C1355C6D275560C400BB0DD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1355C74275560DC00BB0DD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1355C75275560E800BB0DD7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1355C68275560C200BB0DD7 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
