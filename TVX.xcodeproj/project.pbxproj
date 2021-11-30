@@ -11,6 +11,7 @@
 		C1355C6B275560C400BB0DD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1355C6A275560C400BB0DD7 /* Assets.xcassets */; };
 		C1355C6E275560C400BB0DD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1355C6D275560C400BB0DD7 /* Preview Assets.xcassets */; };
 		C1355C7727556CF700BB0DD7 /* OpeningPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1355C7627556CF700BB0DD7 /* OpeningPageView.swift */; };
+		C1355C792755BF1100BB0DD7 /* AmericanTypewriter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = C1355C782755BF1100BB0DD7 /* AmericanTypewriter.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		C1355C6A275560C400BB0DD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1355C6D275560C400BB0DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1355C7627556CF700BB0DD7 /* OpeningPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningPageView.swift; sourceTree = "<group>"; };
+		C1355C782755BF1100BB0DD7 /* AmericanTypewriter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmericanTypewriter.ttc; sourceTree = "<group>"; };
+		C1355C7A2755BF5600BB0DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,12 @@
 		C1355C65275560C200BB0DD7 /* TVX */ = {
 			isa = PBXGroup;
 			children = (
+				C1355C7A2755BF5600BB0DD7 /* Info.plist */,
 				C1355C66275560C200BB0DD7 /* TVXApp.swift */,
 				C1355C75275560E800BB0DD7 /* Views */,
 				C1355C74275560DC00BB0DD7 /* Model */,
 				C1355C6A275560C400BB0DD7 /* Assets.xcassets */,
+				C1355C782755BF1100BB0DD7 /* AmericanTypewriter.ttc */,
 				C1355C6C275560C400BB0DD7 /* Preview Content */,
 			);
 			path = TVX;
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1355C6E275560C400BB0DD7 /* Preview Assets.xcassets in Resources */,
+				C1355C792755BF1100BB0DD7 /* AmericanTypewriter.ttc in Resources */,
 				C1355C6B275560C400BB0DD7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +294,8 @@
 				DEVELOPMENT_TEAM = T24ULKVAAA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TVX/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -317,6 +325,8 @@
 				DEVELOPMENT_TEAM = T24ULKVAAA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TVX/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

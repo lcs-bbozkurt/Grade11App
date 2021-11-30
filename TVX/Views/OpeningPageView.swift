@@ -15,9 +15,7 @@ struct OpeningPageView: View {
             Text("TVX")
                 .fontWeight(.black)
                 .foregroundColor(.black)
-                .font(.title3)
-                .italic()
-            
+                .font(Font.custom("AmericanTypewriter", size: 50))
             Text("\"The new television provider\"")
                 .italic()
                 .fontWeight(.heavy)
@@ -41,16 +39,19 @@ struct OpeningPageView: View {
                 .fontWeight(.black)
                 .foregroundColor(.white)
             Spacer()
-            
+                
         }
-    
+        .navigationTitle("TVX")
+        .navigationBarTitleDisplayMode(.inline)
+
         .background(Image("background.orange").aspectRatio(contentMode: .fit).scaledToFit().blur(radius: 3))
     }
 }
 
 struct OpeningPageView_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         OpeningPageView()
-        
+        }
     }
 }
