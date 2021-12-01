@@ -16,12 +16,16 @@ struct OpeningPageView: View {
                 .fontWeight(.black)
                 .foregroundColor(.black)
                 .font(Font.custom("AmericanTypewriter", size: 50))
+                .padding()
+//                .background(Image("background.orange").aspectRatio(contentMode: .fit).scaledToFit().blur(radius: 3))
+
             Text("\"The new television provider\"")
                 .italic()
                 .fontWeight(.heavy)
                 .foregroundColor(.white)
+                .padding()
             Divider()
-                .padding(.vertical ,15)
+                .padding(.vertical ,30)
             HStack {
             Spacer()
                 Button(action: {print("button was pressed")}, label: {Text("Sign-up")})
@@ -38,13 +42,17 @@ struct OpeningPageView: View {
             Text("TVX is the new era of satelitte providers. TVX helps you choose the best possible streaming subscribtions in a waaay reduced price.")
                 .fontWeight(.black)
                 .foregroundColor(.white)
+                .padding()
             Spacer()
                 
         }
         .navigationTitle("TVX")
         .navigationBarTitleDisplayMode(.inline)
-
-        .background(Image("background.orange").aspectRatio(contentMode: .fit).scaledToFit().blur(radius: 3))
+        .background(
+            Image("backgroundtwo")
+                .scaledToFill()
+                .blur(radius: 3)
+        )
     }
 }
 
