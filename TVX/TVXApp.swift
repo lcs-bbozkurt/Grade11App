@@ -11,7 +11,7 @@ import SwiftUI
 struct TVXApp: App {
     var body: some Scene {
         WindowGroup {
-            OpeningPageView()
+            SignUpView()
         }
     }
 }

@@ -85,8 +85,8 @@
 		C1355C75275560E800BB0DD7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C1355C7627556CF700BB0DD7 /* OpeningPageView.swift */,
 				C182FE6F2756A5E0008FE321 /* SignUpView.swift */,
+				C1355C7627556CF700BB0DD7 /* OpeningPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

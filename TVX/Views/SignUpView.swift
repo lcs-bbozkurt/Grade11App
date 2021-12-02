@@ -17,8 +17,7 @@ struct SignUpView: View {
             UserImage()
             TextField("Username", text:$UserName)
                 .padding()
-                .background(lightGreyColor)
-                .padding(.bottom, 5)
+                .background(lightGreyColor)                
                 .cornerRadius(10.0)
             SecureField("Password", text: $password)
                 .padding()
@@ -59,8 +58,9 @@ struct WelcomeText: View {
 
 struct UserImage: View {
     var body: some View {
-        Image("profilephoto")
+        Image("profilephototwo")
             .resizable()
+            .aspectRatio(contentMode: .fill)
             .frame(width: 150, height: 150)
             .cornerRadius(150)
             .padding(.bottom, 75)
