@@ -2,78 +2,69 @@
 //  SignUpView.swift
 //  TVX
 //
-//  Created by Berk Bozkurt on 2021-11-30.
+//  Created by Berk Bozkurt on 2021-12-06.
 //
 
 import SwiftUI
-let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
 
 struct SignUpView: View {
-    @State var UserName: String = ""
+    @State var username: String = ""
     @State var password: String = ""
+    @State var email: String = ""
+
+    
+    
+    let lightGreyColor = Color(red: 239.0/255.0, green: 243.0/255.0, blue: 244.0/255.0, opacity: 1.0)
+    
+    var accentColor: Color = Color.orange
+    
     var body: some View {
-        VStack {
-            WelcomeText()
-            UserImage()
-            TextField("Username", text:$UserName)
+        VStack{
+            Text("Sign Up")
+                .font(.largeTitle)
+                .foregroundColor(.orange)
+                .fontWeight(.semibold)
+                .padding(.bottom, 20)
+            TextField("Username", text: $username)
                 .padding()
-                .background(lightGreyColor)                
-                .cornerRadius(10.0)
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
             SecureField("Password", text: $password)
                 .padding()
                 .background(lightGreyColor)
-                .cornerRadius(10.0)
+                .cornerRadius(5.0)
                 .padding(.bottom, 20)
-            Button(action: {print("Button tapped")}) {
-                           LoginButtonContent()
-                        }
+            TextField("Email", text: $email)
+                .padding()
+                .background(lightGreyColor)
+                .cornerRadius(5.0)
+                .padding(.bottom, 20)
+            Button(action: {
+
+            }){
+                Text("Sign Up!")
+                 .font(.headline)
+                 .foregroundColor(.white)
+                 .padding()
+                 .frame(width: 220, height: 60)
+                 .background(accentColor)
+                 .cornerRadius(15.0)
+            }
+            
         }
-        .padding()
         .background(
             Image("backgroundtwo")
                 .scaledToFill()
                 .blur(radius: 3)
         )
+        .padding()
+       
     }
 }
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
-    }
-}
-
-
-
-
-
-
-struct WelcomeText: View {
-    var body: some View {
-        Text("Welcome")
-            .font(Font.custom("AmericanTypewriter", size: 50))
-            .padding(.bottom, 20)
-    }
-}
-
-struct UserImage: View {
-    var body: some View {
-        Image("profilephototwo")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 150)
-            .cornerRadius(150)
-            .padding(.bottom, 75)
-    }
-}
-
-struct LoginButtonContent: View {
-    var body: some View {
-        Text("LOGIN")
-            .font(.headline)
-            .foregroundColor(.white)
-            .frame(width: 220, height: 60)
-            .background(Color.orange)
-            .cornerRadius(15.0)
     }
 }
